@@ -1,0 +1,248 @@
+$primary: #00319A;
+$secondary: #f2f5fa;
+$success: #23A318;
+$warning: #E5646E;
+$danger: #E01515;
+
+$primary-dark: #071C4A;
+$secondary-dark: #f2f5fa;
+$success-dark: #23A318;
+$warning-dark: #E5646E;
+$danger-dark: #E01515;
+
+$primary-light: #00319A10;
+$secondary-light: #f2f5fa10;
+$success-light: rgba(35, 163, 24, 0.1);
+$warning-light: #E5646E10;
+$danger-light: #FF4B5510;
+
+$border-radius: .6rem;
+
+
+.default-font {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  letter-spacing: .3px;
+  font-size: 12px;
+}
+
+@mixin input-field($color, $bg) {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: $bg;
+  border-radius: $border-radius;
+  height: 2.8rem;
+
+  select {
+    display: none;
+  }
+
+
+  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    @extend .default-font;
+    background-color: transparent;
+    color: $color;
+    border: none;
+    outline: none;
+    height: calc(100% - .8rem);
+    width: calc(100% - 2rem);
+    padding: .8rem 1rem 0 1rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+  }
+
+  >label {
+    @extend .default-font;
+    color: $color;
+    position: absolute;
+    opacity: 0.5;
+    top: .2rem;
+    left: 1rem;
+    cursor: text;
+    -webkit-transition: opacity .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: opacity .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, opacity .2s ease-out, color .2s ease-out;
+    transition: transform .2s ease-out, opacity .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+
+  >label:not(.label-icon).active {
+    font-weight: 500;
+    opacity: 1;
+    -webkit-transform: translateY(6px) scale(0.75);
+    transform: translateY(6px) scale(0.75);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
+
+.select-selected {
+  @extend .default-font;
+  color: $primary;
+  background-color: $primary-light;
+  height: calc(100% - 1.4rem);
+  width: calc(100% - 2rem);
+  padding: 1.4rem 1rem 0 1rem;
+  border-radius: $border-radius;
+
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $primary transparent transparent transparent;
+  }
+
+  &.select-arrow-active {
+    // color: #fff;
+    background-color: $primary;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &:after {
+      border-color: #fff transparent transparent transparent;
+    }
+
+    &:hover {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+  }
+}
+
+.select-items {
+  position: absolute;
+  background-color: $primary;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  div {
+    @extend .default-font;
+    color: #fff;
+  
+    background-color: transparent;
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+    padding: 1rem;
+
+    &:last-child {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+
+    &.same-as-selected,&:hover {
+      color: #fff;
+      background: $primary-dark;
+    }
+  }
+
+  &:last-child {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}
+
+.select-hide {
+  display: none;
+}
+
+.input-field {
+  @include input-field($primary, $primary-light);
+}
+
+.input-field.select {
+  @include input-field($primary, transparent);
+
+  >label {
+    color: #fff;
+    opacity: 1;
+  }
+
+  >label:not(.label-icon).active {
+    color: $primary;
+  }
+}
+
+.input-field.is-valid {
+  @include input-field($success, $success-light);
+}
+
+.input-field.is-invalid {
+  @include input-field($danger, $danger-light);
+}
+
+@mixin variance($color, $bg) {
+  color: $color;
+  background: $bg;
+}
+
+@mixin btn($color, $bg, $colorHover, $bgHover) {
+  color: $color;
+  background: $bg;
+  @extend .default-font;
+  height: 2.5rem;
+  border-radius: $border-radius;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    @include variance($colorHover, $bgHover);
+  }
+}
+
+
+
+.btn {
+  @include btn(#ffffff, $primary, #ffffff, $primary-dark);
+}
+
+.btn-primary {
+  @include btn(#ffffff, $primary, #ffffff, $primary-dark);
+}
+
+.btn-secondary {
+  @include btn(#000000, $secondary, #ffffff, $primary);
+}
+
+.btn-success {
+  @include btn(#ffffff, $success, #ffffff, $success-dark);
+}
+
+.btn-warning {
+  @include btn(#ffffff, $warning, #ffffff, $warning-dark);
+}
+
+.btn-danger {
+  @include btn(#ffffff, $danger, #ffffff, $danger-dark);
+}
+
+.btn-block {
+  width: 100%;
+}
