@@ -10,6 +10,10 @@ $success-dark: #23A318;
 $warning-dark: #E5646E;
 $danger-dark: #E01515;
 
+$primary-light-color: #eff2f9;
+$success-light-color: #e9f6e7;
+$warning-light-color: #fff4f4;
+
 $primary-light: #00319A10;
 $secondary-light: #f2f5fa10;
 $success-light: rgba(35, 163, 24, 0.1);
@@ -23,7 +27,6 @@ $border-radius: .6rem;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0.1px;
   letter-spacing: .3px;
   font-size: 12px;
 }
@@ -97,6 +100,7 @@ $border-radius: .6rem;
   width: calc(100% - 2rem);
   padding: 1.4rem 1rem 0 1rem;
   border-radius: $border-radius;
+  transition: font-size .2s ease-in;
 
 
   &:after {
@@ -111,38 +115,37 @@ $border-radius: .6rem;
   }
 
   &.select-arrow-active {
-    // color: #fff;
-    background-color: $primary;
+    font-size: 0;
+    transition: font-size .1s ease-out;
+    -webkit-transition: font-size .1s ease-out;
+    background-color: $primary-light-color;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-
-    &:after {
-      border-color: #fff transparent transparent transparent;
-    }
-
-    &:hover {
-      border-color: transparent transparent #fff transparent;
-      top: 7px;
-    }
   }
 }
 
 .select-items {
   position: absolute;
-  background-color: $primary;
-  top: 100%;
+  background-color: $primary-light-color;
+  top: 80%;
   left: 0;
   right: 0;
   z-index: 99;
 
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transform-origin: top;
+  -webkit-transform-origin: top;
+
   div {
     @extend .default-font;
-    color: #fff;
+    color: $primary;
   
     background-color: transparent;
-    height: calc(100% - 2rem);
+    height: calc(100% - 1rem);
     width: calc(100% - 2rem);
-    padding: 1rem;
+    padding: .5rem 1rem;
 
     &:last-child {
       border-bottom-left-radius: $border-radius;
@@ -151,7 +154,7 @@ $border-radius: .6rem;
 
     &.same-as-selected,&:hover {
       color: #fff;
-      background: $primary-dark;
+      background: $primary;
     }
   }
 
@@ -162,7 +165,8 @@ $border-radius: .6rem;
 }
 
 .select-hide {
-  display: none;
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
 }
 
 .input-field {
@@ -173,12 +177,7 @@ $border-radius: .6rem;
   @include input-field($primary, transparent);
 
   >label {
-    color: #fff;
     opacity: 1;
-  }
-
-  >label:not(.label-icon).active {
-    color: $primary;
   }
 }
 

@@ -2,7 +2,6 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0.1px;
   letter-spacing: .3px;
   font-size: 12px; }
 
@@ -12,7 +11,8 @@
   height: calc(100% - 1.4rem);
   width: calc(100% - 2rem);
   padding: 1.4rem 1rem 0 1rem;
-  border-radius: 0.6rem; }
+  border-radius: 0.6rem;
+  transition: font-size .2s ease-in; }
   .select-selected:after {
     position: absolute;
     content: "";
@@ -23,40 +23,44 @@
     border: 6px solid transparent;
     border-color: #00319A transparent transparent transparent; }
   .select-selected.select-arrow-active {
-    background-color: #00319A;
+    font-size: 0;
+    transition: font-size .1s ease-out;
+    -webkit-transition: font-size .1s ease-out;
+    background-color: #eff2f9;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
-    .select-selected.select-arrow-active:after {
-      border-color: #fff transparent transparent transparent; }
-    .select-selected.select-arrow-active:hover {
-      border-color: transparent transparent #fff transparent;
-      top: 7px; }
 
 .select-items {
   position: absolute;
-  background-color: #00319A;
-  top: 100%;
+  background-color: #eff2f9;
+  top: 80%;
   left: 0;
   right: 0;
-  z-index: 99; }
+  z-index: 99;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transform-origin: top;
+  -webkit-transform-origin: top; }
   .select-items div {
-    color: #fff;
+    color: #00319A;
     background-color: transparent;
-    height: calc(100% - 2rem);
+    height: calc(100% - 1rem);
     width: calc(100% - 2rem);
-    padding: 1rem; }
+    padding: .5rem 1rem; }
     .select-items div:last-child {
       border-bottom-left-radius: 0.6rem;
       border-bottom-right-radius: 0.6rem; }
     .select-items div.same-as-selected, .select-items div:hover {
       color: #fff;
-      background: #071C4A; }
+      background: #00319A; }
   .select-items:last-child {
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem; }
 
 .select-hide {
-  display: none; }
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0); }
 
 .input-field {
   position: relative;
@@ -156,10 +160,7 @@
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0; }
   .input-field.select > label {
-    color: #fff;
     opacity: 1; }
-  .input-field.select > label:not(.label-icon).active {
-    color: #00319A; }
 
 .input-field.is-valid {
   position: relative;
