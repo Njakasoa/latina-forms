@@ -1,4 +1,4 @@
-.default-font, .select-selected, .select-items div, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.materialize-textarea, .input-field > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.materialize-textarea, .input-field.select > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.materialize-textarea, .input-field.is-valid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.materialize-textarea, .input-field.is-invalid > label, .btn, .btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger {
+.default-font, .select-selected, .select-items div, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.materialize-textarea, .input-field > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.materialize-textarea, .input-field.select > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.materialize-textarea, .input-field.is-valid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.materialize-textarea, .input-field.is-invalid > label, [type="checkbox"] + span, .btn, .btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -37,7 +37,6 @@
   left: 0;
   right: 0;
   z-index: 99;
-  overflow: hidden;
   transition: transform 0.2s ease-out;
   -webkit-transition: transform 0.2s ease-out;
   transform-origin: top;
@@ -259,6 +258,58 @@
     transform: translateY(6px) scale(0.75);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0; }
+
+[type="checkbox"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none; }
+  [type="checkbox"] + span {
+    color: #00319A;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.7rem;
+    line-height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    [type="checkbox"] + span:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.7rem;
+      height: 1.7rem;
+      z-index: 0;
+      background-color: #f2f5fa;
+      border-radius: 50%; }
+    [type="checkbox"] + span:after {
+      content: '';
+      position: absolute;
+      top: .9rem;
+      left: .9rem;
+      border: 0px solid #00319A;
+      width: 0rem;
+      height: 0rem;
+      border-right: 0px solid #00319A;
+      border-bottom: 0px solid #00319A;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      transition: all .2s ease-out;
+      transform-origin: top; }
+  [type="checkbox"]:checked + span:after {
+    width: .4rem;
+    height: .9rem;
+    top: .4rem;
+    left: .9rem;
+    border-right: 2px solid #00319A;
+    border-bottom: 2px solid #00319A;
+    transition: all .2s ease-out; }
 
 .btn {
   color: #ffffff;

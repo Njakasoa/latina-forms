@@ -132,7 +132,6 @@ $border-radius: .6rem;
   right: 0;
   z-index: 99;
 
-  overflow: hidden;
   transition: transform 0.2s ease-out;
   -webkit-transition: transform 0.2s ease-out;
   transform-origin: top;
@@ -187,6 +186,73 @@ $border-radius: .6rem;
 
 .input-field.is-invalid {
   @include input-field($danger, $danger-light);
+}
+
+[type="checkbox"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+
+  +span {
+    @extend .default-font;
+    color: $primary;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.7rem;
+    line-height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.7rem;
+      height: 1.7rem;
+      z-index: 0;
+      background-color: $secondary;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: .9rem;
+      left: .9rem;
+      border: 0px solid $primary;
+      width: 0rem;
+      height: 0rem;
+      border-right: 0px solid $primary;
+      border-bottom: 0px solid $primary;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      transition: all .2s ease-out;
+      transform-origin: top;
+    }    
+  }
+
+  &:checked {
+    +span {
+      &:after {
+        width: .4rem;
+        height: .9rem;
+        top: .4rem;
+        left: .9rem;
+        border-right: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        transition: all .2s ease-out;
+      }
+    }
+  }
 }
 
 @mixin variance($color, $bg) {
