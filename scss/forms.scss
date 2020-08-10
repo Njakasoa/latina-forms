@@ -280,6 +280,17 @@ $border-radius: .6rem;
   &:hover {
     @include variance($colorHover, $bgHover);
   }
+
+  &.outline {
+    @include variance($bg, #ffffff);
+    border: 0.1rem solid $bg;
+    background: transparent;
+    color: $bg;
+
+    &:hover {
+      @include variance(#ffffff, $bg);
+    }
+  }
 }
 
 

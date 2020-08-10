@@ -327,6 +327,15 @@
   .btn:hover {
     color: #ffffff;
     background: #071C4A; }
+  .btn.outline {
+    color: #00319A;
+    background: #ffffff;
+    border: 0.1rem solid #00319A;
+    background: transparent;
+    color: #00319A; }
+    .btn.outline:hover {
+      color: #ffffff;
+      background: #00319A; }
 
 .btn-primary {
   color: #ffffff;
@@ -344,6 +353,15 @@
   .btn-primary:hover {
     color: #ffffff;
     background: #071C4A; }
+  .btn-primary.outline {
+    color: #00319A;
+    background: #ffffff;
+    border: 0.1rem solid #00319A;
+    background: transparent;
+    color: #00319A; }
+    .btn-primary.outline:hover {
+      color: #ffffff;
+      background: #00319A; }
 
 .btn-secondary {
   color: #000000;
@@ -361,6 +379,15 @@
   .btn-secondary:hover {
     color: #ffffff;
     background: #00319A; }
+  .btn-secondary.outline {
+    color: #f2f5fa;
+    background: #ffffff;
+    border: 0.1rem solid #f2f5fa;
+    background: transparent;
+    color: #f2f5fa; }
+    .btn-secondary.outline:hover {
+      color: #ffffff;
+      background: #f2f5fa; }
 
 .btn-success {
   color: #ffffff;
@@ -378,6 +405,15 @@
   .btn-success:hover {
     color: #ffffff;
     background: #23A318; }
+  .btn-success.outline {
+    color: #23A318;
+    background: #ffffff;
+    border: 0.1rem solid #23A318;
+    background: transparent;
+    color: #23A318; }
+    .btn-success.outline:hover {
+      color: #ffffff;
+      background: #23A318; }
 
 .btn-warning {
   color: #ffffff;
@@ -395,6 +431,15 @@
   .btn-warning:hover {
     color: #ffffff;
     background: #E5646E; }
+  .btn-warning.outline {
+    color: #E5646E;
+    background: #ffffff;
+    border: 0.1rem solid #E5646E;
+    background: transparent;
+    color: #E5646E; }
+    .btn-warning.outline:hover {
+      color: #ffffff;
+      background: #E5646E; }
 
 .btn-danger {
   color: #ffffff;
@@ -412,6 +457,15 @@
   .btn-danger:hover {
     color: #ffffff;
     background: #E01515; }
+  .btn-danger.outline {
+    color: #E01515;
+    background: #ffffff;
+    border: 0.1rem solid #E01515;
+    background: transparent;
+    color: #E01515; }
+    .btn-danger.outline:hover {
+      color: #ffffff;
+      background: #E01515; }
 
 .btn-block {
   width: 100%; }
