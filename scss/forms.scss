@@ -295,7 +295,7 @@ $border-radius: .6rem;
 
 
 
-.btn {
+.btn-default {
   @include btn(#ffffff, $primary, #ffffff, $primary-dark);
 }
 

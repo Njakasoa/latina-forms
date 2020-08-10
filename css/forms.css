@@ -1,4 +1,4 @@
-.default-font, .select-selected, .select-items div, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.materialize-textarea, .input-field > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.materialize-textarea, .input-field.select > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.materialize-textarea, .input-field.is-valid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.materialize-textarea, .input-field.is-invalid > label, [type="checkbox"] + span, .btn, .btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger {
+.default-font, .select-selected, .select-items div, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.materialize-textarea, .input-field > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.materialize-textarea, .input-field.select > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.materialize-textarea, .input-field.is-valid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.materialize-textarea, .input-field.is-invalid > label, [type="checkbox"] + span, .btn-default, .btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -311,7 +311,7 @@
     border-bottom: 2px solid #00319A;
     transition: all .2s ease-out; }
 
-.btn {
+.btn-default {
   color: #ffffff;
   background: #00319A;
   height: 2.5rem;
@@ -322,18 +322,18 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer; }
-  .btn:focus {
+  .btn-default:focus {
     outline: none; }
-  .btn:hover {
+  .btn-default:hover {
     color: #ffffff;
     background: #071C4A; }
-  .btn.outline {
+  .btn-default.outline {
     color: #00319A;
     background: #ffffff;
     border: 0.1rem solid #00319A;
     background: transparent;
     color: #00319A; }
-    .btn.outline:hover {
+    .btn-default.outline:hover {
       color: #ffffff;
       background: #00319A; }
 
