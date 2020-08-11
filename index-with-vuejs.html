@@ -23,6 +23,7 @@
       </div>
       <div class="input-field select">
         <select v-model="form.selected" required>
+          <option value="null">Aucun</option>
           <option v-for="option in options" v-bind:value="option.value">
             {{ option.text }}
           </option>
@@ -31,8 +32,16 @@
       </div>
       <label>
         <input type="checkbox" v-model="form.checkbox" />
-        <span>Groupe de base ?</span>
+        <span>Plus d'option ?</span>
       </label>
+      <div class="input-field select" v-if="form.checkbox">
+        <select v-model="form.selected" required>
+          <option v-for="option in options2" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+        <label class="active">Genre</label>
+      </div>
       <div class="input-field is-valid">
         <input id="email" type="email" v-model="form.email">
         <label for="email">Adresse électronique</label>
@@ -63,17 +72,24 @@
     mounted() {
       initAllSelect();
       initTextFields();
+      observeSelectDom();
       document.addEventListener("click", closeAllSelect);
     },
     data: {
       form: {
         firstname: 'Njakasoa',
-        selected: 2
+        selected: null,
+        selected2: 1,
       },
       options: [
         { value: 1, text: 'A' },
         { value: 2, text: 'B' },
         { value: 3, text: 'C' }
+      ],
+      options2: [
+        { value: 1, text: 'Homme' },
+        { value: 2, text: 'Femme' },
+        { value: 3, text: 'Non binaire' },
       ]
     },
     methods: {

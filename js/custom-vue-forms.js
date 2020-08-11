@@ -16,7 +16,6 @@
 
     // Add active if form auto complete
     $(document).on('change', input_selector, function () {
-      console.log('new Event change !');
       if (this.value.length !== 0 || $(this).attr('placeholder') !== null) {
         $(this)
           .siblings('label')

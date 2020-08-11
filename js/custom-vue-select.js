@@ -10,66 +10,7 @@ function initAllSelect() {
     if (!selElmnt) {
       continue;
     }
-    ll = selElmnt.length;
-    /* For each element, if DIV already exist, delete it */
-    var ss, si;
-    ss = x[i].getElementsByClassName("select-selected")[0];
-    si = x[i].getElementsByClassName("select-items")[0];
-    if(ss && si) {
-      x[i].removeChild(ss);
-      x[i].removeChild(si);
-    }
-
-    /* For each element, create a new DIV that will act as the selected item: */
-    a = document.createElement("DIV");
-    a.setAttribute("class", "select-selected");
-    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-    x[i].appendChild(a);
-    /* For each element, create a new DIV that will contain the option list: */
-    b = document.createElement("DIV");
-    b.setAttribute("class", "select-items select-hide");
-    for (j = 0; j < ll; j++) {
-      /* For each option in the original select element,
-      create a new DIV that will act as an option item: */
-      c = document.createElement("DIV");
-      c.innerHTML = selElmnt.options[j].innerHTML;
-      if (selElmnt.options[j].selected) c.setAttribute("class", "same-as-selected");
-      c.addEventListener("click", function (e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            /* Trigger on change event for Vuejs */
-            s.dispatchEvent(new Event('change'));
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-      });
-      b.appendChild(c);
-    }
-    x[i].appendChild(b);
-    a.addEventListener("click", function (e) {
-      /* When the select box is clicked, close any other select boxes,
-      and open/close the current select box: */
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.previousElementSibling.classList.toggle("active");
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
+    initSelect(x[i]);
   }
 }
 
@@ -94,4 +35,105 @@ function closeAllSelect(elmnt) {
       x[i].classList.add("select-hide");
     }
   }
+}
+
+
+function initSelect(inputFieldSelect) {
+  selElmnt = inputFieldSelect.getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /* For each element, if DIV already exist, delete it */
+  var ss, si;
+  ss = inputFieldSelect.getElementsByClassName("select-selected")[0];
+  si = inputFieldSelect.getElementsByClassName("select-items")[0];
+  if(ss && si) {
+    inputFieldSelect.removeChild(ss);
+    inputFieldSelect.removeChild(si);
+  }
+
+  if (selElmnt.selectedIndex < 0 && selElmnt.options.length) {
+    // We just have to set
+    selElmnt.selectedIndex = 0;
+    selElmnt.dispatchEvent(new Event('change'));
+  }
+
+  /* For each element, create a new DIV that will act as the selected item: */
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  inputFieldSelect.appendChild(a);
+  /* For each element, create a new DIV that will contain the option list: */
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 0; j < ll; j++) {
+    /* For each option in the original select element,
+    create a new DIV that will act as an option item: */
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    if (selElmnt.options[j].selected) c.setAttribute("class", "same-as-selected");
+    c.addEventListener("click", function (e) {
+      /* When an item is clicked, update the original select box,
+      and the selected item: */
+      var y, i, k, s, h, sl, yl;
+      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      sl = s.length;
+      h = this.parentNode.previousSibling;
+      for (i = 0; i < sl; i++) {
+        if (s.options[i].innerHTML == this.innerHTML) {
+          s.selectedIndex = i;
+          /* Trigger on change event for Vuejs */
+          s.dispatchEvent(new Event('change'));
+          h.innerHTML = this.innerHTML;
+          y = this.parentNode.getElementsByClassName("same-as-selected");
+          yl = y.length;
+          for (k = 0; k < yl; k++) {
+            y[k].removeAttribute("class");
+          }
+          this.setAttribute("class", "same-as-selected");
+          break;
+        }
+      }
+      h.click();
+    });
+    b.appendChild(c);
+  }
+  inputFieldSelect.appendChild(b);
+  a.addEventListener("click", function (e) {
+    /* When the select box is clicked, close any other select boxes,
+    and open/close the current select box: */
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.previousElementSibling.classList.toggle("active");
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+
+
+/* Select DOM Observer */
+observeSelectDom = function () {
+  const callback = function(mutationsList, observer) {
+    // Use traditional 'for loops' for IE 11
+    for(let mutation of mutationsList) {
+      if (mutation.type === 'childList') {
+        if (mutation.addedNodes.length) {
+          for (let node of mutation.addedNodes) {
+            if (node.classList && node.classList.contains('input-field') && 
+              node.classList.contains('select')) {
+                initSelect(node);
+              }
+          }
+        }
+      }
+    }
+  };
+  // Observe only select under <form>
+  targetNode = document.querySelector('html');
+  const config = { attributes: true, childList: true, subtree: true };
+
+  // Create an observer instance linked to the callback function
+  const observer = new MutationObserver(callback);
+
+  // Start observing the target node for configured mutations
+
+  observer.observe(targetNode, config);
 }
