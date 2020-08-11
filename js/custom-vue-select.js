@@ -7,8 +7,19 @@ function initAllSelect() {
   l = x.length;
   for (i = 0; i < l; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
-    if (!selElmnt) continue;
+    if (!selElmnt) {
+      continue;
+    }
     ll = selElmnt.length;
+    /* For each element, if DIV already exist, delete it */
+    var ss, si;
+    ss = x[i].getElementsByClassName("select-selected")[0];
+    si = x[i].getElementsByClassName("select-items")[0];
+    if(ss && si) {
+      x[i].removeChild(ss);
+      x[i].removeChild(si);
+    }
+
     /* For each element, create a new DIV that will act as the selected item: */
     a = document.createElement("DIV");
     a.setAttribute("class", "select-selected");
@@ -33,6 +44,8 @@ function initAllSelect() {
         for (i = 0; i < sl; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
             s.selectedIndex = i;
+            /* Trigger on change event for Vuejs */
+            s.dispatchEvent(new Event('change'));
             h.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
             yl = y.length;

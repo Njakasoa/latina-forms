@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My latina forms experimentation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+  <div id="form">
+    <h1>Form CSS with vuejs compatibility</h1>
+    <form method="get">
+      <div class="input-field">
+        <input id="lastname" v-model="form.lastname" type="text">
+        <label for="lastname">Nom</label>
+      </div>
+      <div class="input-field">
+        <input id="firstname" v-model="form.firstname" type="text">
+        <label for="firstname">Prénom</label>
+      </div>
+      <div class="input-field select">
+        <select v-model="form.selected" required>
+          <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+        <label class="active">Type d'excercice</label>
+      </div>
+      <label>
+        <input type="checkbox" v-model="form.checkbox" />
+        <span>Groupe de base ?</span>
+      </label>
+      <div class="input-field is-valid">
+        <input id="email" type="email" v-model="form.email">
+        <label for="email">Adresse électronique</label>
+      </div>
+      <div class="input-field is-invalid">
+        <input id="pass" type="password" v-model="form.pass">
+        <label for="pass">Mot de passe</label>
+      </div>
+      <div class="input-field">
+        <input id="pass2" type="password" v-model="form.pass2">
+        <label for="pass2">Confirmation mot de passe</label>
+      </div>
+      <button type="button" class="btn-default">Enregistrer les modifications</button>
+      <button type="button" v-on:click="updateOptions" class="btn-default outline">Push options in select</button>
+    </form>
+
+    <span>Form : {{ form }}</span>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="js/custom-vue-forms.js"></script>
+<script src="js/custom-vue-select.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var app = new Vue({
+    el: '#form',
+    mounted() {
+      initAllSelect();
+      initTextFields();
+      document.addEventListener("click", closeAllSelect);
+    },
+    data: {
+      form: {
+        firstname: 'Njakasoa',
+        selected: 2
+      },
+      options: [
+        { value: 1, text: 'A' },
+        { value: 2, text: 'B' },
+        { value: 3, text: 'C' }
+      ]
+    },
+    methods: {
+      updateOptions() {
+        const last = this.options[this.options.length -1];
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nextOptions = {
+          value: last.value + 1, text: chars.charAt(last.value)
+        }
+        this.options.push(nextOptions);
+        /* We have to initialize again !!! I don't understand why we need setTimout, but i'll find another way later */
+        setTimeout(function(){ initAllSelect() }, 0);
+      }
+    }
+  })
+</script>
+
+</html>

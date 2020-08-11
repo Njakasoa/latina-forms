@@ -1,10 +1,10 @@
-(function($) {
-  jQuery(document).ready(function($) {
+(function ($) {
+  jQuery(document).ready(function ($) {
     // Text based inputs
     let input_selector =
       'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea';
 
-    let M = {
+    M = {
       keys: {
         ARROW_DOWN: 40,
         ARROW_UP: 38,
@@ -15,7 +15,8 @@
     }
 
     // Add active if form auto complete
-    $(document).on('change', input_selector, function() {
+    $(document).on('change', input_selector, function () {
+      console.log('new Event change !');
       if (this.value.length !== 0 || $(this).attr('placeholder') !== null) {
         $(this)
           .siblings('label')
@@ -29,7 +30,7 @@
      */
     document.addEventListener(
       'focus',
-      function(e) {
+      function (e) {
         if ($(e.target).is(input_selector)) {
           $(e.target)
             .siblings('label, .prefix')
@@ -45,7 +46,7 @@
      */
     document.addEventListener(
       'blur',
-      function(e) {
+      function (e) {
         let $inputElement = $(e.target);
         if ($inputElement.is(input_selector)) {
           let selector = '.prefix';
@@ -65,12 +66,12 @@
 
     // Radio and Checkbox focus class
     let radio_checkbox = 'input[type=radio], input[type=checkbox]';
-    $(document).on('keyup', radio_checkbox, function(e) {
+    $(document).on('keyup', radio_checkbox, function (e) {
       // TAB, check if tabbing to radio or checkbox.
       if (e.which === M.keys.TAB) {
         $(this).addClass('tabbed');
         let $this = $(this);
-        $this.one('blur', function(e) {
+        $this.one('blur', function (e) {
           $(this).removeClass('tabbed');
         });
         return;
@@ -78,3 +79,18 @@
     });
   }); // End of $(document).ready
 })();
+
+function initTextFields() {
+  x = document.getElementsByClassName("input-field");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+    inputElement = x[i].getElementsByTagName("input")[0];
+    if (inputElement) {
+      if (inputElement.value.length !== 0) {
+        $(inputElement)
+          .siblings('label')
+          .addClass('active');
+      }
+    }
+  }
+};
