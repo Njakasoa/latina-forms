@@ -43,8 +43,7 @@ $border-radius: .6rem;
     display: none;
   }
 
-
-  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.latina-textarea {
     @extend .default-font;
     background-color: transparent;
     color: $color;
@@ -61,6 +60,22 @@ $border-radius: .6rem;
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+  }
+
+  &.textarea {
+    height: unset;
+    min-height: 6rem;
+    .latina-textarea {
+      top: 1.4rem;
+      position: absolute;
+      padding-top: 0;
+      line-height: normal;
+      resize: none;
+      width: 100%;
+      height: calc(100% - 2rem);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
   }
 
   >label {

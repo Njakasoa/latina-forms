@@ -108,32 +108,51 @@ function initSelect(inputFieldSelect) {
   });
 }
 
-
 /* Select DOM Observer */
-observeSelectDom = function () {
+const observeSelectDom = function() {
   const callback = function(mutationsList, observer) {
     // Use traditional 'for loops' for IE 11
-    for(let mutation of mutationsList) {
+    const done = [];
+    for (const mutation of mutationsList) {
+      if(mutation.type === 'attributes' && mutation.attributeName === 'value') {
+        const node = mutation.target.parentNode.parentNode;
+        if(node.classList && node.classList.contains('input-field') &&
+        node.classList.contains('select') && !done.includes(node)) {
+          initSelect(node);
+          done.push(node);
+        }
+      }
       if (mutation.type === 'childList') {
         if (mutation.addedNodes.length) {
-          for (let node of mutation.addedNodes) {
-            if (node.classList && node.classList.contains('input-field') && 
-              node.classList.contains('select')) {
-                initSelect(node);
+          for (const node of mutation.addedNodes) {
+            if (node.classList && node.classList.contains('input-field') &&
+              node.classList.contains('select') && !done.includes(node)) {
+              initSelect(node);
+              done.push(node);
+            } else if (node.childNodes.length) {
+              const selectNodes = node.querySelectorAll('.input-field.select');
+              for (const nodeSelect of selectNodes) {
+                if(!done.includes(nodeSelect)) {
+                  initSelect(nodeSelect);
+                  done.push(nodeSelect);
+                }
               }
+            }
           }
         }
       }
     }
   };
   // Observe only select under <form>
-  targetNode = document.querySelector('html');
+  const targetNode = document.querySelector('body');
   const config = { attributes: true, childList: true, subtree: true };
 
   // Create an observer instance linked to the callback function
   const observer = new MutationObserver(callback);
 
   // Start observing the target node for configured mutations
-
   observer.observe(targetNode, config);
+
+  // Start observing select change
+
 }

@@ -35,12 +35,16 @@
         <span>Plus d'option ?</span>
       </label>
       <div class="input-field select" v-if="form.checkbox">
-        <select v-model="form.selected" required>
+        <select v-model="form.selected2" required>
           <option v-for="option in options2" v-bind:value="option.value">
             {{ option.text }}
           </option>
         </select>
         <label class="active">Genre</label>
+      </div>
+      <div class="input-field textarea">
+        <textarea id="description" class="latina-textarea"></textarea>
+        <label for="description">Description</label>
       </div>
       <div class="input-field is-valid">
         <input id="email" type="email" v-model="form.email">
@@ -94,14 +98,13 @@
     },
     methods: {
       updateOptions() {
+        // this.form.selected = 3;
         const last = this.options[this.options.length -1];
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         const nextOptions = {
           value: last.value + 1, text: chars.charAt(last.value)
         }
         this.options.push(nextOptions);
-        /* We have to initialize again !!! I don't understand why we need setTimout, but i'll find another way later */
-        setTimeout(function(){ initAllSelect() }, 0);
       }
     }
   })
