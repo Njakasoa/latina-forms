@@ -39,8 +39,24 @@
     <h2>Try It</h2>
     <form>
       <div class="input-field">
+        <input id="lastname" type="text" required>
+        <label for="lastname">Last Name</label>
+      </div>
+      <div class="input-field">
+        <input id="firstname" type="text" required>
+        <label for="firstname">First Name</label>
+      </div>
+      <div class="input-field is-valid">
         <input id="email" type="email" required>
         <label for="email">Email</label>
+      </div>
+      <div class="input-field is-invalid">
+        <input id="password" type="password" required>
+        <label for="password">Password</label>
+      </div>
+      <div class="input-field">
+        <input id="confirm" type="password" required>
+        <label for="confirm">Confirm Password</label>
       </div>
       <div class="input-field select">
         <select required>
@@ -50,7 +66,22 @@
         </select>
         <label class="active">Options</label>
       </div>
-      <button class="btn-primary" type="submit">Submit</button>
+      <label>
+        <input type="checkbox" />
+        <span>Subscribe to newsletter</span>
+      </label>
+      <div class="input-field textarea">
+        <textarea id="message" class="latina-textarea"></textarea>
+        <label for="message">Message</label>
+      </div>
+      <div class="button-row">
+        <button class="btn-default" type="button">Default</button>
+        <button class="btn-primary" type="submit">Primary</button>
+        <button class="btn-secondary" type="button">Secondary</button>
+        <button class="btn-success" type="button">Success</button>
+        <button class="btn-warning" type="button">Warning</button>
+        <button class="btn-danger" type="button">Danger</button>
+      </div>
     </form>
   </section>
 

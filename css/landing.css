@@ -56,6 +56,23 @@ a.btn-primary {
   margin: 0 auto;
 }
 
+.demo form > label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.button-row button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .footer {
   text-align: center;
   padding: 2rem 1rem;
