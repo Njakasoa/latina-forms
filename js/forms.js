@@ -51,6 +51,31 @@ document.addEventListener('DOMContentLoaded', function () {
     true
   );
 
+  // Password visibility toggle
+  document.querySelectorAll('input[type=password]').forEach(function (el) {
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'password-toggle';
+    toggle.setAttribute('aria-label', 'Toggle password visibility');
+    toggle.textContent = 'Show';
+    const parent = el.parentNode;
+    parent.classList.add('has-toggle');
+    toggle.addEventListener('mousedown', function (e) {
+      // Keep focus on the input when clicking the toggle
+      e.preventDefault();
+    });
+    toggle.addEventListener('click', function () {
+      if (el.type === 'password') {
+        el.type = 'text';
+        toggle.textContent = 'Hide';
+      } else {
+        el.type = 'password';
+        toggle.textContent = 'Show';
+      }
+    });
+    parent.appendChild(toggle);
+  });
+
   // Radio and checkbox focus class
   const rcSelector = 'input[type=radio], input[type=checkbox]';
   document.querySelectorAll(rcSelector).forEach(function (el) {

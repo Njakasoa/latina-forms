@@ -203,6 +203,24 @@ $border-radius: .6rem;
   @include input-field($danger, $danger-light);
 }
 
+.input-field.has-toggle {
+  input {
+    padding-right: 2.5rem;
+  }
+
+  .password-toggle {
+    @extend .default-font;
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+}
+
 [type="checkbox"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
