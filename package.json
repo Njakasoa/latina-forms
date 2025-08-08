@@ -1,8 +1,19 @@
 {
-  "dependencies": {
-    "node-sass": "^4.14.1"
-  },
+  "name": "latina-forms",
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "scss": "sass --watch scss:css"
+  },
+  "dependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.70.0",
+    "vite": "^5.1.4"
   }
 }
