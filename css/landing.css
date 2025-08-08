@@ -1,0 +1,81 @@
+/* Landing page styles for Latina Forms */
+
+body {
+  margin: 0;
+  color: #00319A;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #00319A, #071C4A);
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+a.btn-primary {
+  display: inline-block;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.features {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.feature {
+  flex: 1 1 250px;
+  margin: 1rem;
+  padding: 1rem;
+  background: #f2f5fa;
+  border-radius: 0.6rem;
+}
+
+.demo {
+  padding: 3rem 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.demo form > label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.button-row button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f2f5fa;
+}
+

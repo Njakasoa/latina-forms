@@ -82,3 +82,11 @@ function closeAllSelect(elmnt) {
     }
   }
 }
+
+// Initialize custom selects on load
+document.addEventListener('DOMContentLoaded', function () {
+  initAllSelect();
+  document.addEventListener('click', function (e) {
+    closeAllSelect(e.target);
+  });
+});
