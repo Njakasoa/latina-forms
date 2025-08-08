@@ -60,6 +60,16 @@ $border-radius: .6rem;
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    border-radius: $border-radius;
+
+    &:-webkit-autofill + label {
+      font-weight: 500;
+      opacity: 1;
+      -webkit-transform: translateY(6px) scale(0.75);
+      transform: translateY(6px) scale(0.75);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
   }
 
   &.textarea {

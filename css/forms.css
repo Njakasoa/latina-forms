@@ -85,7 +85,15 @@
     -webkit-transition: border .3s, -webkit-box-shadow .3s;
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
-    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s; }
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    border-radius: 0.6rem; }
+    .input-field input:not([type]):-webkit-autofill + label, .input-field input[type=text]:not(.browser-default):-webkit-autofill + label, .input-field input[type=password]:not(.browser-default):-webkit-autofill + label, .input-field input[type=email]:not(.browser-default):-webkit-autofill + label, .input-field input[type=url]:not(.browser-default):-webkit-autofill + label, .input-field input[type=time]:not(.browser-default):-webkit-autofill + label, .input-field input[type=date]:not(.browser-default):-webkit-autofill + label, .input-field input[type=datetime]:not(.browser-default):-webkit-autofill + label, .input-field input[type=datetime-local]:not(.browser-default):-webkit-autofill + label, .input-field input[type=tel]:not(.browser-default):-webkit-autofill + label, .input-field input[type=number]:not(.browser-default):-webkit-autofill + label, .input-field input[type=search]:not(.browser-default):-webkit-autofill + label, .input-field textarea.latina-textarea:-webkit-autofill + label {
+      font-weight: 500;
+      opacity: 1;
+      -webkit-transform: translateY(6px) scale(0.75);
+      transform: translateY(6px) scale(0.75);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
   .input-field.textarea {
     height: unset;
     min-height: 6rem; }
@@ -147,7 +155,15 @@
     -webkit-transition: border .3s, -webkit-box-shadow .3s;
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
-    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s; }
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    border-radius: 0.6rem; }
+    .input-field.select input:not([type]):-webkit-autofill + label, .input-field.select input[type=text]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=password]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=email]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=url]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=time]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=date]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=datetime]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=datetime-local]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=tel]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=number]:not(.browser-default):-webkit-autofill + label, .input-field.select input[type=search]:not(.browser-default):-webkit-autofill + label, .input-field.select textarea.latina-textarea:-webkit-autofill + label {
+      font-weight: 500;
+      opacity: 1;
+      -webkit-transform: translateY(6px) scale(0.75);
+      transform: translateY(6px) scale(0.75);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
   .input-field.select.textarea {
     height: unset;
     min-height: 6rem; }
@@ -211,7 +227,15 @@
     -webkit-transition: border .3s, -webkit-box-shadow .3s;
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
-    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s; }
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    border-radius: 0.6rem; }
+    .input-field.is-valid input:not([type]):-webkit-autofill + label, .input-field.is-valid input[type=text]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=password]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=email]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=url]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=time]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=date]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=datetime]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=datetime-local]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=tel]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=number]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid input[type=search]:not(.browser-default):-webkit-autofill + label, .input-field.is-valid textarea.latina-textarea:-webkit-autofill + label {
+      font-weight: 500;
+      opacity: 1;
+      -webkit-transform: translateY(6px) scale(0.75);
+      transform: translateY(6px) scale(0.75);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
   .input-field.is-valid.textarea {
     height: unset;
     min-height: 6rem; }
@@ -273,7 +297,15 @@
     -webkit-transition: border .3s, -webkit-box-shadow .3s;
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
-    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s; }
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    border-radius: 0.6rem; }
+    .input-field.is-invalid input:not([type]):-webkit-autofill + label, .input-field.is-invalid input[type=text]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=password]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=email]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=url]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=time]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=date]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=datetime]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=datetime-local]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=tel]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=number]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid input[type=search]:not(.browser-default):-webkit-autofill + label, .input-field.is-invalid textarea.latina-textarea:-webkit-autofill + label {
+      font-weight: 500;
+      opacity: 1;
+      -webkit-transform: translateY(6px) scale(0.75);
+      transform: translateY(6px) scale(0.75);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
   .input-field.is-invalid.textarea {
     height: unset;
     min-height: 6rem; }
