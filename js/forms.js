@@ -2,8 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const inputSelector =
     'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea';
 
-  // Add active class if field has value
+  // Add active class if field has value (on load and change)
   document.querySelectorAll(inputSelector).forEach(function (el) {
+    if (el.value.length !== 0 || el.getAttribute('placeholder') !== null) {
+      const label = el.parentNode.querySelector('label');
+      if (label) {
+        label.classList.add('active');
+      }
+    }
     el.addEventListener('change', function () {
       if (el.value.length !== 0 || el.getAttribute('placeholder') !== null) {
         const label = el.parentNode.querySelector('label');
