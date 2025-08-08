@@ -1,80 +1,69 @@
-(function($) {
-  jQuery(document).ready(function($) {
-    // Text based inputs
-    let input_selector =
-      'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea';
+document.addEventListener('DOMContentLoaded', function () {
+  const inputSelector =
+    'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea';
 
-    let M = {
-      keys: {
-        ARROW_DOWN: 40,
-        ARROW_UP: 38,
-        ENTER: 13,
-        ESC: 27,
-        TAB: 9
-      }
-    }
-
-    // Add active if form auto complete
-    $(document).on('change', input_selector, function() {
-      if (this.value.length !== 0 || $(this).attr('placeholder') !== null) {
-        $(this)
-          .siblings('label')
-          .addClass('active');
+  // Add active class if field has value
+  document.querySelectorAll(inputSelector).forEach(function (el) {
+    el.addEventListener('change', function () {
+      if (el.value.length !== 0 || el.getAttribute('placeholder') !== null) {
+        const label = el.parentNode.querySelector('label');
+        if (label) {
+          label.classList.add('active');
+        }
       }
     });
+  });
 
-    /**
-     * Add active when element has focus
-     * @param {Event} e
-     */
-    document.addEventListener(
-      'focus',
-      function(e) {
-        if ($(e.target).is(input_selector)) {
-          $(e.target)
-            .siblings('label, .prefix')
-            .addClass('active');
+  // Add active class on focus
+  document.addEventListener(
+    'focus',
+    function (e) {
+      if (e.target.matches(inputSelector)) {
+        const label = e.target.parentNode.querySelector('label, .prefix');
+        if (label) {
+          label.classList.add('active');
         }
-      },
-      true
-    );
+      }
+    },
+    true
+  );
 
-    /**
-     * Remove active when element is blurred
-     * @param {Event} e
-     */
-    document.addEventListener(
-      'blur',
-      function(e) {
-        let $inputElement = $(e.target);
-        if ($inputElement.is(input_selector)) {
-          let selector = '.prefix';
-
-          if (
-            $inputElement[0].value.length === 0 &&
-            $inputElement[0].validity.badInput !== true &&
-            !$inputElement.attr('placeholder')
-          ) {
-            selector += ', label';
-          }
-          $inputElement.siblings(selector).removeClass('active');
+  // Remove active class on blur
+  document.addEventListener(
+    'blur',
+    function (e) {
+      const target = e.target;
+      if (target.matches(inputSelector)) {
+        let selector = '.prefix';
+        if (
+          target.value.length === 0 &&
+          target.validity.badInput !== true &&
+          !target.getAttribute('placeholder')
+        ) {
+          selector += ', label';
         }
-      },
-      true
-    );
-
-    // Radio and Checkbox focus class
-    let radio_checkbox = 'input[type=radio], input[type=checkbox]';
-    $(document).on('keyup', radio_checkbox, function(e) {
-      // TAB, check if tabbing to radio or checkbox.
-      if (e.which === M.keys.TAB) {
-        $(this).addClass('tabbed');
-        let $this = $(this);
-        $this.one('blur', function(e) {
-          $(this).removeClass('tabbed');
+        const siblings = target.parentNode.querySelectorAll(selector);
+        siblings.forEach(function (el) {
+          el.classList.remove('active');
         });
-        return;
+      }
+    },
+    true
+  );
+
+  // Radio and checkbox focus class
+  const rcSelector = 'input[type=radio], input[type=checkbox]';
+  document.querySelectorAll(rcSelector).forEach(function (el) {
+    el.addEventListener('keyup', function (e) {
+      if (e.key === 'Tab' || e.keyCode === 9) {
+        el.classList.add('tabbed');
+        const removeTab = function () {
+          el.classList.remove('tabbed');
+          el.removeEventListener('blur', removeTab);
+        };
+        el.addEventListener('blur', removeTab);
       }
     });
-  }); // End of $(document).ready
-})();
+  });
+});
+
