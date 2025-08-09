@@ -142,5 +142,38 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // Input validation
+  function updateValidity(el) {
+    const container = el.closest('.input-field');
+    if (!container) return;
+    if (!el.checkValidity()) {
+      container.classList.add('is-invalid');
+      container.classList.remove('is-valid');
+    } else {
+      container.classList.remove('is-invalid');
+      container.classList.add('is-valid');
+    }
+  }
+
+  document.addEventListener(
+    'input',
+    function (e) {
+      if (e.target.matches(inputSelector)) {
+        updateValidity(e.target);
+      }
+    },
+    true
+  );
+
+  document.addEventListener(
+    'blur',
+    function (e) {
+      if (e.target.matches(inputSelector)) {
+        updateValidity(e.target);
+      }
+    },
+    true
+  );
 });
 
