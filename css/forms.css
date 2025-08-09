@@ -1,4 +1,4 @@
-.default-font, .tags-field .tags-input input, .tags-field .tags-input .tag, .tags-field label, .btn-danger, .btn-warning, .btn-success, .btn-secondary, .btn-primary, .btn-default, [type=checkbox] + span, .input-field.has-toggle .password-toggle, .input-field.is-invalid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.latina-textarea, .input-field.is-valid > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.latina-textarea, .input-field.select > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.latina-textarea, .input-field > label, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.latina-textarea, .select-items div, .select-selected {
+.default-font, .tags-field .tags-input input, .tags-field .tags-input .tag, .tags-field label, .btn-danger, .btn-warning, .btn-success, .btn-secondary, .btn-primary, .btn-default, [type=checkbox] + span:not(.slider), .input-field.has-toggle .password-toggle, .input-field.is-invalid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.latina-textarea, .input-field.is-valid > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.latina-textarea, .input-field.select > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.latina-textarea, .input-field > label, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.latina-textarea, .select-items div, .select-selected {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -408,7 +408,7 @@
   opacity: 0;
   pointer-events: none;
 }
-[type=checkbox] + span {
+[type=checkbox] + span:not(.slider) {
   color: #00319A;
   position: relative;
   padding-left: 35px;
@@ -421,7 +421,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-[type=checkbox] + span:before {
+[type=checkbox] + span:not(.slider):before {
   content: "";
   position: absolute;
   top: 0;
@@ -432,7 +432,7 @@
   background-color: #f2f5fa;
   border-radius: 50%;
 }
-[type=checkbox] + span:after {
+[type=checkbox] + span:not(.slider):after {
   content: "";
   position: absolute;
   top: 0.9rem;
@@ -447,7 +447,7 @@
   transition: all 0.2s ease-out;
   transform-origin: top;
 }
-[type=checkbox]:checked + span:after {
+[type=checkbox]:checked + span:not(.slider):after {
   width: 0.4rem;
   height: 0.9rem;
   top: 0.4rem;
@@ -758,8 +758,8 @@
   gap: 0.5rem;
   background-color: rgba(0, 49, 154, 0.062745098);
   border-radius: 0.6rem;
-  padding: 0.5rem;
-  min-height: 2.8rem;
+  padding: 0.25rem 0.5rem;
+  min-height: 2rem;
   align-items: center;
 }
 .tags-field .tags-input .tag {
@@ -789,3 +789,5 @@
   flex: 1;
   min-width: 5rem;
 }
+
+/*# sourceMappingURL=forms.css.map */

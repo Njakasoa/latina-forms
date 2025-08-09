@@ -235,12 +235,12 @@ $border-radius: .6rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
-  
+
   position: absolute;
   opacity: 0;
   pointer-events: none;
 
-  +span {
+  + span:not(.slider) {
     @extend .default-font;
     color: $primary;
     position: relative;
@@ -280,11 +280,11 @@ $border-radius: .6rem;
       transform: rotate(40deg);
       transition: all .2s ease-out;
       transform-origin: top;
-    }    
+    }
   }
 
   &:checked {
-    +span {
+    + span:not(.slider) {
       &:after {
         width: .4rem;
         height: .9rem;
@@ -490,8 +490,8 @@ $border-radius: .6rem;
     gap: .5rem;
     background-color: $primary-light;
     border-radius: $border-radius;
-    padding: .5rem;
-    min-height: 2.8rem;
+    padding: .25rem .5rem;
+    min-height: 2rem;
     align-items: center;
 
     .tag {
