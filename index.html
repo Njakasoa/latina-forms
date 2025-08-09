@@ -40,32 +40,78 @@
     <form>
       <div class="input-field">
         <input id="lastname" type="text" required>
-        <label for="lastname">Last Name</label>
+        <label for="lastname">Last Name<span class="required">*</span></label>
       </div>
       <div class="input-field">
         <input id="firstname" type="text" required>
-        <label for="firstname">First Name</label>
+        <label for="firstname">First Name<span class="required">*</span></label>
       </div>
       <div class="input-field is-valid">
         <input id="email" type="email" required>
-        <label for="email">Email</label>
+        <label for="email">Email<span class="required">*</span></label>
       </div>
       <div class="input-field is-invalid">
         <input id="password" type="password" required>
-        <label for="password">Password</label>
+        <label for="password">Password<span class="required">*</span></label>
       </div>
       <div class="input-field">
         <input id="confirm" type="password" required>
-        <label for="confirm">Confirm Password</label>
+        <label for="confirm">Confirm Password<span class="required">*</span></label>
       </div>
+
+      <div class="phone-row">
+        <div class="input-field select">
+          <select id="country-code" required>
+            <option value="" disabled selected>Code</option>
+            <option value="+1">+1 US</option>
+            <option value="+44">+44 UK</option>
+            <option value="+52">+52 MX</option>
+          </select>
+          <label class="active">Code<span class="required">*</span></label>
+        </div>
+        <div class="input-field">
+          <input id="phone" type="tel" required>
+          <label for="phone">Phone Number<span class="required">*</span></label>
+        </div>
+      </div>
+
       <div class="input-field select">
         <select required>
           <option value="" disabled selected>Select Option</option>
           <option value="1">Option One</option>
           <option value="2">Option Two</option>
         </select>
-        <label class="active">Options</label>
+        <label class="active">Options<span class="required">*</span></label>
       </div>
+
+      <div class="number-field input-field">
+        <input id="quantity" type="number" min="0" value="0" required>
+        <label for="quantity">Quantity<span class="required">*</span></label>
+        <div class="number-controls">
+          <button type="button" class="decrement">-</button>
+          <button type="button" class="increment">+</button>
+        </div>
+      </div>
+
+      <div class="tags-field">
+        <label for="tags-text">Tags</label>
+        <div class="tags-input" id="tags-input">
+          <input type="text" id="tags-text" placeholder="Type and press Enter">
+        </div>
+      </div>
+
+      <div class="toggle-field">
+        <label class="switch">
+          <input type="checkbox" id="toggle-example">
+          <span class="slider"></span>
+        </label>
+        <span>Enable notifications</span>
+      </div>
+
+      <label>
+        <input type="checkbox" required />
+        <span>I agree to the terms<span class="required">*</span></span>
+      </label>
       <label>
         <input type="checkbox" />
         <span>Subscribe to newsletter</span>
