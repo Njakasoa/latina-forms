@@ -1,8 +1,9 @@
 {
-  "dependencies": {
-    "node-sass": "^4.14.1"
+  "devDependencies": {
+    "sass": "^1.69.0"
   },
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "scss": "sass --watch scss:css",
+    "build": "sass scss:css && mkdir -p dist && cat css/styles.css css/forms.css css/scrollbar.css > dist/latina-forms.css && cat js/select.js js/forms.js > dist/latina-forms.js"
   }
 }
