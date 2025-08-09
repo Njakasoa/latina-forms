@@ -315,6 +315,8 @@ $border-radius: .6rem;
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
   &:focus {
     outline: none;
@@ -322,6 +324,13 @@ $border-radius: .6rem;
 
   &:hover {
     @include variance($colorHover, $bgHover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
   }
 
   &.outline {
@@ -332,6 +341,13 @@ $border-radius: .6rem;
 
     &:hover {
       @include variance(#ffffff, $bg);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
     }
   }
 }

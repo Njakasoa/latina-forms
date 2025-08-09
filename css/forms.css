@@ -468,6 +468,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-default:focus {
   outline: none;
@@ -475,6 +477,12 @@
 .btn-default:hover {
   color: #ffffff;
   background: #071C4A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-default:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-default.outline {
   color: #00319A;
@@ -486,6 +494,12 @@
 .btn-default.outline:hover {
   color: #ffffff;
   background: #00319A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-default.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-primary {
@@ -499,6 +513,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-primary:focus {
   outline: none;
@@ -506,6 +522,12 @@
 .btn-primary:hover {
   color: #ffffff;
   background: #071C4A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-primary.outline {
   color: #00319A;
@@ -517,6 +539,12 @@
 .btn-primary.outline:hover {
   color: #ffffff;
   background: #00319A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-primary.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-secondary {
@@ -530,6 +558,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-secondary:focus {
   outline: none;
@@ -537,6 +567,12 @@
 .btn-secondary:hover {
   color: #ffffff;
   background: #00319A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-secondary.outline {
   color: #f2f5fa;
@@ -548,6 +584,12 @@
 .btn-secondary.outline:hover {
   color: #ffffff;
   background: #f2f5fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-secondary.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-success {
@@ -561,6 +603,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-success:focus {
   outline: none;
@@ -568,6 +612,12 @@
 .btn-success:hover {
   color: #ffffff;
   background: #23A318;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-success:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-success.outline {
   color: #23A318;
@@ -579,6 +629,12 @@
 .btn-success.outline:hover {
   color: #ffffff;
   background: #23A318;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-success.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-warning {
@@ -592,6 +648,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-warning:focus {
   outline: none;
@@ -599,6 +657,12 @@
 .btn-warning:hover {
   color: #ffffff;
   background: #E5646E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-warning:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-warning.outline {
   color: #E5646E;
@@ -610,6 +674,12 @@
 .btn-warning.outline:hover {
   color: #ffffff;
   background: #E5646E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-warning.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-danger {
@@ -623,6 +693,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-danger:focus {
   outline: none;
@@ -630,6 +702,12 @@
 .btn-danger:hover {
   color: #ffffff;
   background: #E01515;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-danger:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-danger.outline {
   color: #E01515;
@@ -641,6 +719,12 @@
 .btn-danger.outline:hover {
   color: #ffffff;
   background: #E01515;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-danger.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-block {
