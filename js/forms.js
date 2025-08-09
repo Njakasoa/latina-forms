@@ -126,8 +126,19 @@ document.addEventListener('DOMContentLoaded', function () {
         const tag = document.createElement('span');
         tag.className = 'tag';
         tag.textContent = tagsInput.value.trim();
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'remove-tag';
+        remove.setAttribute('aria-label', 'Remove tag');
+        remove.textContent = '×';
+        tag.appendChild(remove);
         tagsContainer.insertBefore(tag, tagsInput);
         tagsInput.value = '';
+      }
+    });
+    tagsContainer.addEventListener('click', function (e) {
+      if (e.target.classList.contains('remove-tag')) {
+        tagsContainer.removeChild(e.target.parentNode);
       }
     });
   }
