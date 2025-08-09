@@ -365,3 +365,135 @@ $border-radius: .6rem;
 .btn-block {
   width: 100%;
 }
+
+.required {
+  color: $danger;
+  margin-left: .25rem;
+}
+
+.phone-row {
+  display: flex;
+  gap: 1rem;
+
+  .input-field {
+    flex: 1;
+  }
+
+  .input-field.select {
+    flex: 0 0 30%;
+  }
+}
+
+.toggle-field {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $secondary;
+    transition: .4s;
+    border-radius: 20px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: $primary;
+
+    &:before {
+      transform: translateX(20px);
+    }
+  }
+}
+
+.number-field {
+  position: relative;
+
+  .number-controls {
+    position: absolute;
+    right: .2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+      color: $primary;
+    }
+  }
+}
+
+.tags-field {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  label {
+    @extend .default-font;
+    color: $primary;
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .tags-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    background-color: $primary-light;
+    border-radius: $border-radius;
+    padding: .5rem;
+    min-height: 2.8rem;
+
+    .tag {
+      background-color: $primary;
+      color: #fff;
+      padding: 0 .5rem;
+      border-radius: .3rem;
+      @extend .default-font;
+    }
+
+    input {
+      @extend .default-font;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: $primary;
+      flex: 1;
+      min-width: 5rem;
+    }
+  }
+}

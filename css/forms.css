@@ -566,3 +566,115 @@
 
 .btn-block {
   width: 100%; }
+
+.required {
+  color: #E01515;
+  margin-left: .25rem; }
+
+.phone-row {
+  display: flex;
+  gap: 1rem; }
+  .phone-row .input-field {
+    flex: 1; }
+  .phone-row .input-field.select {
+    flex: 0 0 30%; }
+
+.toggle-field {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 1rem 0; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px; }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f5fa;
+    transition: .4s;
+    border-radius: 20px; }
+    .switch .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%; }
+  .switch input:checked + .slider {
+    background-color: #00319A; }
+    .switch input:checked + .slider:before {
+      transform: translateX(20px); }
+
+.number-field {
+  position: relative; }
+  .number-field .number-controls {
+    position: absolute;
+    right: .2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; }
+    .number-field .number-controls button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+      color: #00319A; }
+
+.tags-field {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .tags-field label {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .3px;
+    font-size: 12px;
+    color: #00319A;
+    display: block;
+    margin-bottom: .5rem; }
+  .tags-field .tags-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    background-color: #00319A10;
+    border-radius: 0.6rem;
+    padding: .5rem;
+    min-height: 2.8rem; }
+    .tags-field .tags-input .tag {
+      background-color: #00319A;
+      color: #fff;
+      padding: 0 .5rem;
+      border-radius: .3rem;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: .3px;
+      font-size: 12px; }
+    .tags-field .tags-input input {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: .3px;
+      font-size: 12px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #00319A;
+      flex: 1;
+      min-width: 5rem; }

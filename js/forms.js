@@ -96,5 +96,40 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Number input controls
+  document.querySelectorAll('.number-field').forEach(function (wrapper) {
+    const input = wrapper.querySelector('input[type=number]');
+    const inc = wrapper.querySelector('.increment');
+    const dec = wrapper.querySelector('.decrement');
+    if (inc) {
+      inc.addEventListener('click', function () {
+        input.stepUp();
+        input.dispatchEvent(new Event('change'));
+      });
+    }
+    if (dec) {
+      dec.addEventListener('click', function () {
+        input.stepDown();
+        input.dispatchEvent(new Event('change'));
+      });
+    }
+  });
+
+  // Tags input
+  const tagsInput = document.getElementById('tags-text');
+  const tagsContainer = document.getElementById('tags-input');
+  if (tagsInput && tagsContainer) {
+    tagsInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && tagsInput.value.trim() !== '') {
+        e.preventDefault();
+        const tag = document.createElement('span');
+        tag.className = 'tag';
+        tag.textContent = tagsInput.value.trim();
+        tagsContainer.insertBefore(tag, tagsInput);
+        tagsInput.value = '';
+      }
+    });
+  }
 });
 
