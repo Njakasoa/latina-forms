@@ -136,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function () {
         tagsInput.value = '';
       }
     });
-
     tagsContainer.addEventListener('click', function (e) {
       if (e.target.classList.contains('remove-tag')) {
         tagsContainer.removeChild(e.target.parentNode);
