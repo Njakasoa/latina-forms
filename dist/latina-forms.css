@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   background-color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-}
-
-/*# sourceMappingURL=styles.css.map */
+  font-family: 'Montserrat', sans-serif; }
 .default-font, .tags-field .tags-input input, .tags-field .tags-input .tag, .tags-field label, .btn-danger, .btn-warning, .btn-success, .btn-secondary, .btn-primary, .btn-default, [type=checkbox] + span:not(.slider), .input-field.has-toggle .password-toggle, .input-field.is-invalid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.latina-textarea, .input-field.is-valid > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.latina-textarea, .input-field.select > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.latina-textarea, .input-field > label, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.latina-textarea, .select-items div, .select-selected {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -475,6 +472,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-default:focus {
   outline: none;
@@ -482,6 +481,12 @@ body {
 .btn-default:hover {
   color: #ffffff;
   background: #071C4A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-default:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-default.outline {
   color: #00319A;
@@ -493,6 +498,12 @@ body {
 .btn-default.outline:hover {
   color: #ffffff;
   background: #00319A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-default.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-primary {
@@ -506,6 +517,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-primary:focus {
   outline: none;
@@ -513,6 +526,12 @@ body {
 .btn-primary:hover {
   color: #ffffff;
   background: #071C4A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-primary.outline {
   color: #00319A;
@@ -524,6 +543,12 @@ body {
 .btn-primary.outline:hover {
   color: #ffffff;
   background: #00319A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-primary.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-secondary {
@@ -537,6 +562,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-secondary:focus {
   outline: none;
@@ -544,6 +571,12 @@ body {
 .btn-secondary:hover {
   color: #ffffff;
   background: #00319A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-secondary.outline {
   color: #f2f5fa;
@@ -555,6 +588,12 @@ body {
 .btn-secondary.outline:hover {
   color: #ffffff;
   background: #f2f5fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-secondary.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-success {
@@ -568,6 +607,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-success:focus {
   outline: none;
@@ -575,6 +616,12 @@ body {
 .btn-success:hover {
   color: #ffffff;
   background: #23A318;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-success:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-success.outline {
   color: #23A318;
@@ -586,6 +633,12 @@ body {
 .btn-success.outline:hover {
   color: #ffffff;
   background: #23A318;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-success.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-warning {
@@ -599,6 +652,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-warning:focus {
   outline: none;
@@ -606,6 +661,12 @@ body {
 .btn-warning:hover {
   color: #ffffff;
   background: #E5646E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-warning:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-warning.outline {
   color: #E5646E;
@@ -617,6 +678,12 @@ body {
 .btn-warning.outline:hover {
   color: #ffffff;
   background: #E5646E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-warning.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-danger {
@@ -630,6 +697,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn-danger:focus {
   outline: none;
@@ -637,6 +706,12 @@ body {
 .btn-danger:hover {
   color: #ffffff;
   background: #E01515;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-danger:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-danger.outline {
   color: #E01515;
@@ -648,6 +723,12 @@ body {
 .btn-danger.outline:hover {
   color: #ffffff;
   background: #E01515;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-danger.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 .btn-block {
@@ -803,28 +884,21 @@ body {
   max-height: 200px;
   overflow: scroll;
   border-bottom-left-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem;
-}
+  border-bottom-right-radius: 0.6rem; }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
-}
+  width: 5px; }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f2f5fa;
-}
+  background: #f2f5fa; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00319A;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: 0.6rem;
-}
-
-/*# sourceMappingURL=scrollbar.css.map */
+  background: 0.6rem; }
