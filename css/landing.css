@@ -2,13 +2,13 @@
 
 body {
   margin: 0;
-  color: #00319A;
+  color: #7B2CBF;
 }
 
 .hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #00319A, #071C4A);
+  background: linear-gradient(135deg, #9d4edd, #7b2cbf);
   color: #ffffff;
 }
 

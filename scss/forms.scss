@@ -1,20 +1,20 @@
-$primary: #00319A;
+$primary: #7B2CBF;
 $secondary: #f2f5fa;
 $success: #23A318;
 $warning: #E5646E;
 $danger: #E01515;
 
-$primary-dark: #071C4A;
+$primary-dark: #5A189A;
 $secondary-dark: #f2f5fa;
 $success-dark: #23A318;
 $warning-dark: #E5646E;
 $danger-dark: #E01515;
 
-$primary-light-color: #eff2f9;
+$primary-light-color: #F3E8FF;
 $success-light-color: #e9f6e7;
 $warning-light-color: #fff4f4;
 
-$primary-light: #00319A10;
+$primary-light: #7B2CBF10;
 $secondary-light: #f2f5fa10;
 $success-light: rgba(35, 163, 24, 0.1);
 $warning-light: #E5646E10;
@@ -117,6 +117,7 @@ $border-radius: .6rem;
   }
 }
 
+
 .select-selected {
   @extend .default-font;
   color: $primary;
@@ -194,11 +195,11 @@ $border-radius: .6rem;
 }
 
 .input-field {
-  @include input-field($primary, $primary-light);
+  @include input-field($primary-dark, $primary-light-color);
 }
 
 .input-field.select {
-  @include input-field($primary, transparent);
+  @include input-field($primary-dark, $primary-light-color);
 
   >label {
     opacity: 1;

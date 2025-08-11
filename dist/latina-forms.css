@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  background-color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif; }
+  background: linear-gradient(135deg, #9d4edd, #7b2cbf);
+  font-family: "Montserrat", sans-serif;
+}
 .default-font, .tags-field .tags-input input, .tags-field .tags-input .tag, .tags-field label, .btn-danger, .btn-warning, .btn-success, .btn-secondary, .btn-primary, .btn-default, [type=checkbox] + span:not(.slider), .input-field.has-toggle .password-toggle, .input-field.is-invalid > label, .input-field.is-invalid input:not([type]), .input-field.is-invalid input[type=text]:not(.browser-default), .input-field.is-invalid input[type=password]:not(.browser-default), .input-field.is-invalid input[type=email]:not(.browser-default), .input-field.is-invalid input[type=url]:not(.browser-default), .input-field.is-invalid input[type=time]:not(.browser-default), .input-field.is-invalid input[type=date]:not(.browser-default), .input-field.is-invalid input[type=datetime]:not(.browser-default), .input-field.is-invalid input[type=datetime-local]:not(.browser-default), .input-field.is-invalid input[type=tel]:not(.browser-default), .input-field.is-invalid input[type=number]:not(.browser-default), .input-field.is-invalid input[type=search]:not(.browser-default), .input-field.is-invalid textarea.latina-textarea, .input-field.is-valid > label, .input-field.is-valid input:not([type]), .input-field.is-valid input[type=text]:not(.browser-default), .input-field.is-valid input[type=password]:not(.browser-default), .input-field.is-valid input[type=email]:not(.browser-default), .input-field.is-valid input[type=url]:not(.browser-default), .input-field.is-valid input[type=time]:not(.browser-default), .input-field.is-valid input[type=date]:not(.browser-default), .input-field.is-valid input[type=datetime]:not(.browser-default), .input-field.is-valid input[type=datetime-local]:not(.browser-default), .input-field.is-valid input[type=tel]:not(.browser-default), .input-field.is-valid input[type=number]:not(.browser-default), .input-field.is-valid input[type=search]:not(.browser-default), .input-field.is-valid textarea.latina-textarea, .input-field.select > label, .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.latina-textarea, .input-field > label, .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.latina-textarea, .select-items div, .select-selected {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -11,8 +12,8 @@ body {
 }
 
 .select-selected {
-  color: #00319A;
-  background-color: rgba(0, 49, 154, 0.062745098);
+  color: #7B2CBF;
+  background-color: rgba(123, 44, 191, 0.062745098);
   height: calc(100% - 1.4rem);
   width: calc(100% - 2rem);
   padding: 1.4rem 1rem 0 1rem;
@@ -27,20 +28,20 @@ body {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #00319A transparent transparent transparent;
+  border-color: #7B2CBF transparent transparent transparent;
 }
 .select-selected.select-arrow-active {
   font-size: 0;
   transition: font-size 0.1s ease-out;
   -webkit-transition: font-size 0.1s ease-out;
-  background-color: #eff2f9;
+  background-color: #F3E8FF;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .select-items {
   position: absolute;
-  background-color: #eff2f9;
+  background-color: #F3E8FF;
   top: 80%;
   left: 0;
   right: 0;
@@ -51,7 +52,7 @@ body {
   -webkit-transform-origin: top;
 }
 .select-items div {
-  color: #00319A;
+  color: #7B2CBF;
   background-color: transparent;
   height: calc(100% - 1rem);
   width: calc(100% - 2rem);
@@ -63,7 +64,7 @@ body {
 }
 .select-items div.same-as-selected, .select-items div:hover {
   color: #fff;
-  background: #00319A;
+  background: #7B2CBF;
 }
 .select-items:last-child {
   border-bottom-left-radius: 0.6rem;
@@ -79,7 +80,7 @@ body {
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: rgba(0, 49, 154, 0.062745098);
+  background-color: #F3E8FF;
   border-radius: 0.6rem;
   height: 2.8rem;
 }
@@ -88,7 +89,7 @@ body {
 }
 .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.latina-textarea {
   background-color: transparent;
-  color: #00319A;
+  color: #5A189A;
   border: none;
   outline: none;
   height: calc(100% - 0.8rem);
@@ -128,7 +129,7 @@ body {
   box-sizing: border-box;
 }
 .input-field > label {
-  color: #00319A;
+  color: #5A189A;
   position: absolute;
   opacity: 0.5;
   top: 0.2rem;
@@ -157,7 +158,7 @@ body {
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: transparent;
+  background-color: #F3E8FF;
   border-radius: 0.6rem;
   height: 2.8rem;
 }
@@ -166,7 +167,7 @@ body {
 }
 .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.latina-textarea {
   background-color: transparent;
-  color: #00319A;
+  color: #5A189A;
   border: none;
   outline: none;
   height: calc(100% - 0.8rem);
@@ -206,7 +207,7 @@ body {
   box-sizing: border-box;
 }
 .input-field.select > label {
-  color: #00319A;
+  color: #5A189A;
   position: absolute;
   opacity: 0.5;
   top: 0.2rem;
@@ -413,7 +414,7 @@ body {
   pointer-events: none;
 }
 [type=checkbox] + span:not(.slider) {
-  color: #00319A;
+  color: #7B2CBF;
   position: relative;
   padding-left: 35px;
   cursor: pointer;
@@ -441,11 +442,11 @@ body {
   position: absolute;
   top: 0.9rem;
   left: 0.9rem;
-  border: 0px solid #00319A;
+  border: 0px solid #7B2CBF;
   width: 0rem;
   height: 0rem;
-  border-right: 0px solid #00319A;
-  border-bottom: 0px solid #00319A;
+  border-right: 0px solid #7B2CBF;
+  border-bottom: 0px solid #7B2CBF;
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
   transition: all 0.2s ease-out;
@@ -456,14 +457,14 @@ body {
   height: 0.9rem;
   top: 0.4rem;
   left: 0.9rem;
-  border-right: 2px solid #00319A;
-  border-bottom: 2px solid #00319A;
+  border-right: 2px solid #7B2CBF;
+  border-bottom: 2px solid #7B2CBF;
   transition: all 0.2s ease-out;
 }
 
 .btn-default {
   color: #ffffff;
-  background: #00319A;
+  background: #7B2CBF;
   height: 2.5rem;
   border-radius: 0.6rem;
   border: none;
@@ -480,7 +481,7 @@ body {
 }
 .btn-default:hover {
   color: #ffffff;
-  background: #071C4A;
+  background: #5A189A;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -489,15 +490,15 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-default.outline {
-  color: #00319A;
+  color: #7B2CBF;
   background: #ffffff;
-  border: 0.1rem solid #00319A;
+  border: 0.1rem solid #7B2CBF;
   background: transparent;
-  color: #00319A;
+  color: #7B2CBF;
 }
 .btn-default.outline:hover {
   color: #ffffff;
-  background: #00319A;
+  background: #7B2CBF;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -508,7 +509,7 @@ body {
 
 .btn-primary {
   color: #ffffff;
-  background: #00319A;
+  background: #7B2CBF;
   height: 2.5rem;
   border-radius: 0.6rem;
   border: none;
@@ -525,7 +526,7 @@ body {
 }
 .btn-primary:hover {
   color: #ffffff;
-  background: #071C4A;
+  background: #5A189A;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -534,15 +535,15 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
 }
 .btn-primary.outline {
-  color: #00319A;
+  color: #7B2CBF;
   background: #ffffff;
-  border: 0.1rem solid #00319A;
+  border: 0.1rem solid #7B2CBF;
   background: transparent;
-  color: #00319A;
+  color: #7B2CBF;
 }
 .btn-primary.outline:hover {
   color: #ffffff;
-  background: #00319A;
+  background: #7B2CBF;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -570,7 +571,7 @@ body {
 }
 .btn-secondary:hover {
   color: #ffffff;
-  background: #00319A;
+  background: #7B2CBF;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -792,7 +793,7 @@ body {
   border-radius: 50%;
 }
 .switch input:checked + .slider {
-  background-color: #00319A;
+  background-color: #7B2CBF;
 }
 .switch input:checked + .slider:before {
   transform: translateX(20px);
@@ -822,7 +823,7 @@ body {
   cursor: pointer;
   line-height: 1;
   padding: 0;
-  color: #00319A;
+  color: #7B2CBF;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -836,7 +837,7 @@ body {
   margin-bottom: 1rem;
 }
 .tags-field label {
-  color: #00319A;
+  color: #7B2CBF;
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -844,14 +845,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  background-color: rgba(0, 49, 154, 0.062745098);
+  background-color: rgba(123, 44, 191, 0.062745098);
   border-radius: 0.6rem;
   padding: 0.25rem 0.5rem;
   min-height: 2rem;
   align-items: center;
 }
 .tags-field .tags-input .tag {
-  background-color: #00319A;
+  background-color: #7B2CBF;
   color: #fff;
   padding: 0 0.5rem;
   border-radius: 0.3rem;
@@ -873,32 +874,35 @@ body {
   border: none;
   outline: none;
   background: transparent;
-  color: #00319A;
+  color: #7B2CBF;
   flex: 1;
   min-width: 5rem;
 }
-
-/*# sourceMappingURL=forms.css.map */
 /* EXPERIMENTATION ONLY WORK ON CHROME */
 .select-items {
   max-height: 200px;
   overflow: scroll;
   border-bottom-left-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem; }
+  border-bottom-right-radius: 0.6rem;
+}
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 5px;
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f2f5fa; }
+  background: #f2f5fa;
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #00319A;
-  border-radius: 10px; }
+  background: #7B2CBF;
+  border-radius: 10px;
+}
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: 0.6rem; }
+  background: 0.6rem;
+}
