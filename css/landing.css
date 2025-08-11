@@ -3,13 +3,12 @@
 body {
   margin: 0;
   color: #f2f5fa;
-  background: linear-gradient(135deg, #9d4edd, #7b2cbf);
+  background: linear-gradient(205deg, #000000, #7b2cbf);
 }
 
 .hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #9d4edd, #7b2cbf);
   color: #ffffff;
 }
 
@@ -50,10 +49,9 @@ a.btn-primary {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.6rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  color: #7B2CBF;
+  color: #ffffff;
 }
 
 .demo {
