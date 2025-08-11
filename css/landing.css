@@ -2,7 +2,8 @@
 
 body {
   margin: 0;
-  color: #7B2CBF;
+  color: #f2f5fa;
+  background: linear-gradient(135deg, #9d4edd, #7b2cbf);
 }
 
 .hero {
@@ -46,14 +47,32 @@ a.btn-primary {
   flex: 1 1 250px;
   margin: 1rem;
   padding: 1rem;
-  background: #f2f5fa;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.6rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #7B2CBF;
 }
 
 .demo {
   padding: 3rem 1rem;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.demo h2 {
+  color: #f2f5fa;
+}
+
+.demo form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .demo form > label {
