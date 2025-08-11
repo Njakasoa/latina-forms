@@ -12,8 +12,8 @@ body {
 }
 
 .select-selected {
-  color: #7B2CBF;
-  background-color: rgba(123, 44, 191, 0.062745098);
+  color: #5A189A;
+  background-color: #F3E8FF;
   height: calc(100% - 1.4rem);
   width: calc(100% - 2rem);
   padding: 1.4rem 1rem 0 1rem;
@@ -28,7 +28,7 @@ body {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #7B2CBF transparent transparent transparent;
+  border-color: #5A189A transparent transparent transparent;
 }
 .select-selected.select-arrow-active {
   font-size: 0;
@@ -52,7 +52,7 @@ body {
   -webkit-transform-origin: top;
 }
 .select-items div {
-  color: #7B2CBF;
+  color: #5A189A;
   background-color: transparent;
   height: calc(100% - 1rem);
   width: calc(100% - 2rem);
@@ -64,7 +64,7 @@ body {
 }
 .select-items div.same-as-selected, .select-items div:hover {
   color: #fff;
-  background: #7B2CBF;
+  background: #5A189A;
 }
 .select-items:last-child {
   border-bottom-left-radius: 0.6rem;
@@ -80,7 +80,7 @@ body {
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: rgba(123, 44, 191, 0.062745098);
+  background-color: #F3E8FF;
   border-radius: 0.6rem;
   height: 2.8rem;
 }
@@ -89,7 +89,7 @@ body {
 }
 .input-field input:not([type]), .input-field input[type=text]:not(.browser-default), .input-field input[type=password]:not(.browser-default), .input-field input[type=email]:not(.browser-default), .input-field input[type=url]:not(.browser-default), .input-field input[type=time]:not(.browser-default), .input-field input[type=date]:not(.browser-default), .input-field input[type=datetime]:not(.browser-default), .input-field input[type=datetime-local]:not(.browser-default), .input-field input[type=tel]:not(.browser-default), .input-field input[type=number]:not(.browser-default), .input-field input[type=search]:not(.browser-default), .input-field textarea.latina-textarea {
   background-color: transparent;
-  color: #7B2CBF;
+  color: #5A189A;
   border: none;
   outline: none;
   height: calc(100% - 0.8rem);
@@ -129,7 +129,7 @@ body {
   box-sizing: border-box;
 }
 .input-field > label {
-  color: #7B2CBF;
+  color: #5A189A;
   position: absolute;
   opacity: 0.5;
   top: 0.2rem;
@@ -158,7 +158,7 @@ body {
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: transparent;
+  background-color: #F3E8FF;
   border-radius: 0.6rem;
   height: 2.8rem;
 }
@@ -167,7 +167,7 @@ body {
 }
 .input-field.select input:not([type]), .input-field.select input[type=text]:not(.browser-default), .input-field.select input[type=password]:not(.browser-default), .input-field.select input[type=email]:not(.browser-default), .input-field.select input[type=url]:not(.browser-default), .input-field.select input[type=time]:not(.browser-default), .input-field.select input[type=date]:not(.browser-default), .input-field.select input[type=datetime]:not(.browser-default), .input-field.select input[type=datetime-local]:not(.browser-default), .input-field.select input[type=tel]:not(.browser-default), .input-field.select input[type=number]:not(.browser-default), .input-field.select input[type=search]:not(.browser-default), .input-field.select textarea.latina-textarea {
   background-color: transparent;
-  color: #7B2CBF;
+  color: #5A189A;
   border: none;
   outline: none;
   height: calc(100% - 0.8rem);
@@ -207,7 +207,7 @@ body {
   box-sizing: border-box;
 }
 .input-field.select > label {
-  color: #7B2CBF;
+  color: #5A189A;
   position: absolute;
   opacity: 0.5;
   top: 0.2rem;
@@ -414,7 +414,7 @@ body {
   pointer-events: none;
 }
 [type=checkbox] + span:not(.slider) {
-  color: #7B2CBF;
+  color: #5A189A;
   position: relative;
   padding-left: 35px;
   cursor: pointer;
@@ -442,11 +442,11 @@ body {
   position: absolute;
   top: 0.9rem;
   left: 0.9rem;
-  border: 0px solid #7B2CBF;
+  border: 0px solid #5A189A;
   width: 0rem;
   height: 0rem;
-  border-right: 0px solid #7B2CBF;
-  border-bottom: 0px solid #7B2CBF;
+  border-right: 0px solid #5A189A;
+  border-bottom: 0px solid #5A189A;
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
   transition: all 0.2s ease-out;
@@ -457,8 +457,8 @@ body {
   height: 0.9rem;
   top: 0.4rem;
   left: 0.9rem;
-  border-right: 2px solid #7B2CBF;
-  border-bottom: 2px solid #7B2CBF;
+  border-right: 2px solid #5A189A;
+  border-bottom: 2px solid #5A189A;
   transition: all 0.2s ease-out;
 }
 
@@ -793,7 +793,7 @@ body {
   border-radius: 50%;
 }
 .switch input:checked + .slider {
-  background-color: #7B2CBF;
+  background-color: #5A189A;
 }
 .switch input:checked + .slider:before {
   transform: translateX(20px);
@@ -823,7 +823,7 @@ body {
   cursor: pointer;
   line-height: 1;
   padding: 0;
-  color: #7B2CBF;
+  color: #5A189A;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -837,7 +837,7 @@ body {
   margin-bottom: 1rem;
 }
 .tags-field label {
-  color: #7B2CBF;
+  color: #5A189A;
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -845,14 +845,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  background-color: rgba(123, 44, 191, 0.062745098);
+  background-color: #F3E8FF;
   border-radius: 0.6rem;
   padding: 0.25rem 0.5rem;
   min-height: 2rem;
   align-items: center;
 }
 .tags-field .tags-input .tag {
-  background-color: #7B2CBF;
+  background-color: #5A189A;
   color: #fff;
   padding: 0 0.5rem;
   border-radius: 0.3rem;
@@ -874,10 +874,12 @@ body {
   border: none;
   outline: none;
   background: transparent;
-  color: #7B2CBF;
+  color: #5A189A;
   flex: 1;
   min-width: 5rem;
 }
+
+/*# sourceMappingURL=forms.css.map */
 /* EXPERIMENTATION ONLY WORK ON CHROME */
 .select-items {
   max-height: 200px;
