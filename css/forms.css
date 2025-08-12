@@ -409,7 +409,7 @@
   pointer-events: none;
 }
 [type=checkbox] + span:not(.slider) {
-  color: #5A189A;
+  color: #fff;
   position: relative;
   padding-left: 35px;
   cursor: pointer;
@@ -783,7 +783,7 @@
   width: 20px;
   left: 0;
   top: 0;
-  background-color: white;
+  background-color: #5A189A;
   transition: 0.4s;
   border-radius: 50%;
 }
@@ -869,7 +869,7 @@
   border: none;
   outline: none;
   background: transparent;
-  color: #5A189A;
+  color: #fff;
   flex: 1;
   min-width: 5rem;
 }
