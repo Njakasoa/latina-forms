@@ -119,22 +119,31 @@
         <textarea id="message" class="latina-textarea"></textarea>
         <label for="message">Message</label>
       </div>
-      <div class="button-row">
-        <button class="btn-default" type="button">Default</button>
-        <button class="btn-primary" type="submit">Primary</button>
-        <button class="btn-secondary" type="button">Secondary</button>
-        <button class="btn-success" type="button">Success</button>
-        <button class="btn-warning" type="button">Warning</button>
-        <button class="btn-danger" type="button">Danger</button>
-      </div>
-    </form>
-  </section>
+        <div class="button-row">
+          <button class="btn-default" type="button">Default</button>
+          <button class="btn-primary" type="submit">Primary</button>
+          <button class="btn-secondary" type="button">Secondary</button>
+          <button class="btn-success" type="button">Success</button>
+          <button class="btn-warning" type="button">Warning</button>
+          <button class="btn-danger" type="button">Danger</button>
+        </div>
+      </form>
+    </section>
 
-  <footer class="footer">
-    <p>&copy; 2024 Latina Forms</p>
-  </footer>
+ <section id="snake" class="snake-section">
+   <h2>Snake Game</h2>
+   <div class="snake-container">
+     <canvas id="snake-canvas" width="400" height="400"></canvas>
+     <div class="snake-score">Score: <span id="snake-score">0</span></div>
+   </div>
+ </section>
 
-  <script src="dist/latina-forms.js"></script>
+<footer class="footer">
+  <p>&copy; 2024 Latina Forms</p>
+</footer>
+
+ <script src="dist/latina-forms.js"></script>
+ <script src="js/snake.js"></script>
 </body>
 
 </html>

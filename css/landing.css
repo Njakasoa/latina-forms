@@ -97,3 +97,39 @@ a.btn-primary {
   color: #7B2CBF;
 }
 
+.snake-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.snake-container {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#snake-canvas {
+  display: block;
+  width: 100%;
+  background: #000;
+  border-radius: 0.4rem;
+}
+
+.snake-score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
